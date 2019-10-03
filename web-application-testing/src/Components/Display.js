@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Display = props => {
   return (
-    <div className="displays">
-      <h3>Strikes: {strikes}</h3>
-      <h3>Balls: {balls}</h3>
-    </div>
+    <>
+      <h3 data-testid="strikeHeader" >Strike: {props.strikes}</h3>
+      <h3 data-testid="ballHeader">Ball: {props.balls}</h3>
+   </>
   );
 };
 

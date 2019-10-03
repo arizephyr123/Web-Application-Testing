@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import Header from './Components/Header';
-import Dashboard from './Components/Dashboard';
-import Display from './Components/Display';
+import Header from "./Components/Header";
+import Dashboard from "./Components/Dashboard";
+import Display from "./Components/Display";
 
 function App() {
   return (
     <div>
-      <Header/>
-        <Dashboard/>
+      <Header />
+      <Dashboard />
     </div>
   );
 }

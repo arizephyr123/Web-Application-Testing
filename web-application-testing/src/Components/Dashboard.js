@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Display from "./Display";
 
 const Dashboard = () => {
   const [strikes, setStrikes] = useState(0);
@@ -44,12 +45,21 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="buttons">
-      <button onClick={addStrike}>Strike</button>
-      <button onClick={addBall}>Ball</button>
-      <button onClick={foul}>Foul</button>
-      <button onClick={reset}>Hit</button>
-    </div>
+    <>
+      <div className="displays">
+        <Display strikes={strikes} balls={balls} />
+      </div>
+      <div className="buttons">
+        <button data-testid="strikeButton" onClick={addStrike}>
+          Strike
+        </button>
+        <button data-testid="ballButton" onClick={addBall}>
+          Ball
+        </button>
+        <button onClick={foul}>Foul</button>
+        <button onClick={reset}>Hit</button>
+      </div>
+    </>
   );
 };
 

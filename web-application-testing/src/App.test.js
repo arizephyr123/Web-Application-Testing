@@ -6,14 +6,33 @@ it('renders without crashing', () => {
   render(<App/>)
 }); 
 
-test ('Strikes header is found', () =>{
-  const { getByText } = render(<App/>);
-  getByText(/strikes/i);
+test ('Strike header is found', () =>{
+  const { getByTestId} = render(<App/>);
+  getByTestId('strikeHeader');
+});
+test ('Ball header is found', () =>{
+  const { getByTestId} = render(<App/>);
+  getByTestId('ballHeader');
+});
+test ('Strike button is found', () =>{
+  const { getByTestId} = render(<App/>);
+  getByTestId('strikeButton');
+});
+test ('Ball button is found', () =>{
+  const { getByTestId} = render(<App/>);
+  getByTestId('ballButton');
 });
 
-test ('Balls header is found', () =>{
+test ('Foul button is found', () =>{
   const { getByText } = render(<App/>);
-  getByText(/balls/i);
+  getByText(/foul/i);
 });
+
+test ('Hit button is found', () =>{
+  const { getByText } = render(<App/>);
+  getByText(/hit/i);
+});
+
+
 
 
