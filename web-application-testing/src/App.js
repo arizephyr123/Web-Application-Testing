@@ -1,12 +1,14 @@
 import React from 'react';
-import Dashboard from './Components/Dashboard'
+
+import Header from './Components/Header';
+import Dashboard from './Components/Dashboard';
+import Display from './Components/Display';
 
 function App() {
   return (
     <div>
-      <header><h2>Score Board</h2>
+      <Header/>
         <Dashboard/>
-      </header>
     </div>
   );
 }
