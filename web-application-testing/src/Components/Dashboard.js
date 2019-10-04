@@ -40,8 +40,8 @@ const Dashboard = () => {
     if (strikes <= 1) {
       setStrikes(strikes + 1);
     } else {
-      setStrikes(2);
-    }
+        return null;
+    } 
   };
 
   return (

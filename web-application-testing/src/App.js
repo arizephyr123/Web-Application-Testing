@@ -1,12 +1,12 @@
 import React from "react";
 
+import "./index.css"
 import Header from "./Components/Header";
 import Dashboard from "./Components/Dashboard";
-import Display from "./Components/Display";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Dashboard />
     </div>

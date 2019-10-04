@@ -1,10 +1,17 @@
 import React from "react";
+import "../App.css"
 
 const Display = props => {
   return (
     <>
-      <h3 data-testid="strikeHeader" >Strike: {props.strikes}</h3>
-      <h3 data-testid="ballHeader">Ball: {props.balls}</h3>
+    <div className="display-section">
+      <h3 data-testid="strikeHeader" >Strike:</h3>
+      <h3 className="display-numbers">{props.strikes}</h3>
+      </div>
+      <div className="display-section">
+      <h3 data-testid="ballHeader">Ball:</h3>
+      <h3 className="display-numbers">{props.balls}</h3>
+      </div>
    </>
   );
 };
