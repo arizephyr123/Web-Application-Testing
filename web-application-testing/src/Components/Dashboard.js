@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Display from "./Display";
 
+export const addOne = currentVal => {
+  return currentVal + 1;
+} 
+
 const Dashboard = () => {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
@@ -12,7 +16,7 @@ const Dashboard = () => {
 
   //button click adds one to strikes up to 3 then calls reset fn
   const addStrike = () => {
-    setStrikes(strikes + 1);
+    setStrikes(addOne(strikes));
     if (strikes >= 3) {
       reset();
     }
@@ -20,7 +24,7 @@ const Dashboard = () => {
 
   //button click adds one to balls up to 4 then calls reset fn
   const addBall = () => {
-    setBalls(balls + 1);
+    setBalls(addOne(balls));
     if (balls >= 4) {
       reset();
     }
