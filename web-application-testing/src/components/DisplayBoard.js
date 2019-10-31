@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css';
 
 import Buttons from "./Buttons";
 
@@ -19,7 +20,6 @@ class DisplayBoard extends React.Component {
   };
 
   addStrike = () => {
-    // let newStrikes = this.state.balls;
     this.setState({
       strikes: this.state.strikes + 1
     });

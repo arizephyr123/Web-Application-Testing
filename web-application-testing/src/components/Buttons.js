@@ -1,9 +1,10 @@
 import React from 'react';
+import '../App.css';
 
 const Buttons = props => {
-console.log(props);
+//console.log(props);
 return(
-    <div>
+    <div className='buttons-container'>
         <button onClick={props.addStrike}>Strike</button>
         <button onClick={props.addBall}>Ball</button>
         <button onClick={props.addFoul}>Foul</button>
