@@ -1,0 +1,13 @@
+html {
+  background-image: url('./images/baseballBackground.jpg');
+  background-size: auto; 
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.App {
+  background-color: beige;
+  margin: 30px;
+  border: 5px solid brown;
+  text-align: center;
+}
