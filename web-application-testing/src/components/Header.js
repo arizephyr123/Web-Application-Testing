@@ -4,7 +4,7 @@ import '../App.css';
 const Header = () => {
   return (
     <div className='header'>
-      <h1><span role="img" aria-label="baseball">⚾️</span> Go Baseball!! </h1>
+      <h1 data-testid="title"><span role="img" aria-label="baseball">⚾️</span> Go Baseball!! </h1>
     </div>
   );
 };
